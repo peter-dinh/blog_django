@@ -1,0 +1,23 @@
+<html>
+    <head>
+        {% include 'blocks/head.html' %}
+    </head>
+    <body>
+        {% include "blocks/header.html" %}
+        <div class="container sections-wrapper">
+            <div class="row">
+                <div class="primary col-md-8 col-sm-12 col-xs-12">
+
+                    {% include "blocks/catalog.html" %}
+                    {% include "blocks/pagination.html" %}
+
+                </div>
+                <div class="secondary col-md-4 col-sm-12 col-xs-12">
+                     {% include "blocks/widget/widget1.html" %}
+                     {% include "blocks/widget/widget7.html" %}
+                </div>
+            </div>
+        </div>
+        {% include 'blocks/footer.html' %}
+    </body>
+</html>

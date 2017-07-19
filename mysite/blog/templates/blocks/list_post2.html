@@ -1,0 +1,16 @@
+<section class="projects section">
+    <div class="section-inner">
+        <h2 class="heading"><span style="color: #FFA500;">Post Popular</span></h2>
+        <div class="content">
+            {% if list_post %}
+            {% for item in list_post %}
+            <div class="item">
+                <h3 class="title"><a href="{% url 'blog:info' item.id %}">{{ item.title }}</a></h3>
+                <p class="summary">{{ item.excerpt }}</p>
+                <p><a class="more-link" href="{% url 'blog:info' item.id %}" target="_blank"><i class="fa fa-external-link"></i>More Info</a></p>
+            </div><!--//item-->
+            {% endfor %}
+            {% endif %}
+        </div><!--//content-->  
+    </div><!--//section-inner-->                 
+</section><!--//section-->
