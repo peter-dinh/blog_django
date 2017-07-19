@@ -1,6 +1,8 @@
 # blog_django
 blog_django
 
+required begin: setup "django", setup "pip" and "psycopg2"
+
 1, Setup library python in "/requirements/dev.txt":
 $sudo pip install -r requirements/dev.txt
 
