@@ -25,3 +25,5 @@ $python mysite/manage.py createsuperuser
 
 $python mysite/manage.py runserver
 
+User: dinhtruong
+Pass: 123456789a
